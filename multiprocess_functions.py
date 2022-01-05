@@ -13,8 +13,8 @@ import supportfunctions
 import ordermanagement
 
 # Import strategies
-import market_tracker_15m
-import long_rider_15m
+import strategy1
+import strategy2
 
 # Import required packages
 from datetime import datetime, time
@@ -99,11 +99,11 @@ class RunAlgo:
 
                 # the below component should contain all the strategies configured in algo_list.txt file.
                 # in order to include a new strategy, it should be added in below lines.
-                if self.algo == 'market_tracker_15m':
-                    signal = market_tracker_15m.signal(hist_data)
+                if self.algo == 'strategy1':
+                    signal = strategy1.signal(hist_data)
                     signal = signal.iloc[50:]
-                elif self.algo == 'long_rider_15m':
-                    signal = long_rider_15m.signal(hist_data)
+                elif self.algo == 'strategy2':
+                    signal = strategy2.signal(hist_data)
                     signal = signal.iloc[50:]
                 else:
                     logger.info('algo {} is not configured in RunAlgo class'.format(self.algo))
