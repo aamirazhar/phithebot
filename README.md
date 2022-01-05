@@ -1,10 +1,10 @@
 # phithebot
-This repository contains codes of automated trade execution system for Indian stock market using zerodha APIs.
+This repository contains codes of automated trade execution system for Indian stock market using zerodha's Kite connect APIs.
 
 ## Introduction
 This bot is an automated trade execution system build for Indian markets. It works with Zerodha account and is built using their APIs. The system is designed to be scalable in terms of strategies it can deploy. It can be deployed on cloud based computing engines and scheduled to kick-off before markets starts. The system is capable of self login. Subscription to Zerodha APIs (including their historical data api) is required.
 
-The system in its current form is designed to trade at the money options. Limit orders with price near last traded price are place. Futures trading is also possible with minor modifications in the code.
+The system in its current form is designed to trade at the money options. Limit orders with price near last traded price are placed. Futures trading is also possible with minor modifications in the code.
 
 ## Configuration and supporting files
 1. **zerodha_credentials.txt**: This file contains the credentials of user's zerodha account. The details are used in module zerodhalogin_chrome.py to log in the user automatically.
