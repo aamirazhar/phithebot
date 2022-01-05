@@ -1,0 +1,2 @@
+{'algo' : 'strategy1', 'interval' : '15minute', 'security' : 'NSE:NIFTY 50', 'lot_size' : 50, 'baseqty' : 1, 'days_before_expiry' : 4}
+{'algo' : 'strategy2', 'interval' : '15minute', 'security' : 'NSE:NIFTY 50', 'lot_size' : 50, 'baseqty' : 1, 'days_before_expiry' : 7}

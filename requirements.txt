@@ -1,0 +1,7 @@
+kiteconnect==3.9.2
+pandas==1.1.3
+pytz==2020.1
+requests==2.24.0
+numpy==1.19.2
+selenium==3.141.0
+pyotp==2.6.0
